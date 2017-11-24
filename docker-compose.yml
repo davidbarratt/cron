@@ -1,0 +1,7 @@
+version: '3'
+services:
+  cron:
+    build: ./
+    image: davidbarratt/cron
+    environment:
+      CRONTAB: '* * * * * echo "Hello World!"'
