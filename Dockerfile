@@ -2,6 +2,7 @@ FROM debian:jessie
 
 RUN apt-get update && apt-get install -y \
 		cron \
+		curl \
 		--no-install-recommends && rm -r /var/lib/apt/lists/*
 
 COPY ./bin/cron-start /bin/cron-start
